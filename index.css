@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fff;
+}
+
+#capital-letter{
+    font-size: 7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #C721DE;
+    
+}
+
+.hero-heading h2{
+    overflow: hidden;
+    border-right: .25em solid #C721DE;
+    white-space: nowrap;
+    animation: typing 4.0s steps(40, end),blink-caret 1s step-end infinite;
+}
+
+
+.hero-heading{
+    display: inline-block;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #C721DE}
+}
+
+.main-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem 5rem;
+}
+
+#remaining-letter{
+    font-size: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    
+}
+
+.main-heading h2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+.hero-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    flex-wrap: wrap;
+    margin-top: 6rem;
+}
+
+.converter-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 13em;
+    min-width: 15em;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 15px;
+}
+
+.converter-box h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.celsius{
+    /* background: linear-gradient(#ff4040, #fff); */
+    background-color: #ff4040;
+}
+
+.Farenhite{
+    background-color: #4070ff;
+}
+
+.Kelvin{
+    background-color: #62ff24;
+}
+
+.bg-unit{
+    position: absolute;
+    font-size: 10em;
+    pointer-events: none;
+    z-index: 0;
+    transform: translateX(-50%,-50%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+.celsius-unit{
+    color: #ff4b4b;
+}
+
+.Farenhite-unit{
+    color: #537eff;
+}
+
+.kelvin-unit{
+    color: #7ffe4e;
+}
+
+.converter-box h2, .converter-box input{
+    position: relative;
+}
+
+.converter-box h2{
+    color: #fff;
+    bottom: 15%;
+}
+
+.celsius h2{
+    right: 20%;
+}
+
+.Farenhite h2{
+    right: 8%;
+}
+
+.Kelvin h2{
+    right: 20%;
+}
+
+
+.converter-box input{
+    background:none;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-align: center;
+    height: 2em;
+    width: 3em;
+    font-size: 3em;
+}
+
